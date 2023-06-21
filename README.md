@@ -1,5 +1,6 @@
 # math
 ## EXP 01:
+```
 import numpy as np
 L = [int(i) for i in input().split()]
 N = len(L);M = max(L)
@@ -25,8 +26,9 @@ print(sd)
 print("the mean arrival rate is %.3f",mean)
 print("the variance of arrival from feeder is %.3f",var)
 print("the standard deviation of arrival from feeder is %.3f",sd)
-
+```
 ## EXP 02:
+```
 import numpy as np
 import math
 import scipy.stats
@@ -57,8 +59,10 @@ print(" ")
 cal_chi2_sq=np.sum(xi)
 print("Calculated value of Chi square is %4.2f"%cal_chi2_sq) table_chi2=scipy.stats.chi2.ppf(1-.01,df=M)
 print("Table value of chi square at 1 level is %4.2f"%table_chi2)
+```
 
 ## EXP 03:
+```
 import math
 import matplotlib.pyplot as plt
 import numpy as np
@@ -102,8 +106,10 @@ plt.plot(x,y1,'r')
 plt.xlabel('x-data')
 plt.ylabel('y-data')
 plt.legend(['Regression Line','Data points'])
+```
 
 ## EXP 04:
+```
 arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
 ser_time=float(input("Enter the mean inter service time of Lathe Machine (insecs) : "))
 Robot_time=float(input("Enter the Additional time taken for the Robot (in secs): "))
@@ -128,8 +134,10 @@ print("Probability that the system is empty : %0.2f "%(1-lam/mu) )
 else:
 print("Warning! Objects Over flow will happen in the conveyor")
 print(" -------------------------------------------------------- ")
+```
 
 ## EXP 05:
+```
 import math
 arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
 ser_time=float(input("Enter the mean inter service time of Lathe Machine (insecs) : "))
@@ -161,8 +169,10 @@ print("Probability that the system is empty : %0.2f "%(1-rho))
 else:
 print("Warning! Objects Over flow will happen in the conveyor")
 print(" -------------------------------------------------------- ")
+```
 
 ## EXP 06:
+```
 arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
 ser_time1=float(input("Enter the mean inter service time of Lathe Machine 1(in secs) : "))
 ser_time2=float(input("Enter the mean inter service time of Lathe Machine 2(in secs) : "))
@@ -200,3 +210,4 @@ print("Average waiting time of an object in the conveyor S3 : %0.2f secs"%Wq3)
 else:
 print("Warning! Objects Over flow will happen in the conveyor")
 print(" -------------------------------------------------------- ")
+```
